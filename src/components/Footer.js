@@ -9,7 +9,7 @@ function Footer() {
                 width={400} height={200}
                 alt={'An fountain pen.'}
                 className='absolute bottom-0 right-8' />
-            <a href='mailto:cdreitzer@gmail.com' className='font-["Palfour"] text-[30px] absolute bottom-[20px] right-[130px]'>cdreitzer@gmail.com</a>
+            <a href='mailto:cdreitzer@gmail.com' className='font-["Palfour"] text-[20px] md:text-[30px] absolute bottom-[20px] right-[130px]'>cdreitzer@gmail.com</a>
         </div>
     )
 }

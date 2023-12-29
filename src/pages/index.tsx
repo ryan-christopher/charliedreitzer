@@ -11,33 +11,39 @@ const outfit = Outfit({ subsets: ['latin'] })
 to view local address:
 ipconfig getifaddr en0 
 */}
+import dynamic from 'next/dynamic'
+
+const DynamicNav = dynamic(() => import('../components/Navbar'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
     <main className="bg-[#f4f2ec] text-black text-left">
       <Head>
         <title>Home - Charlie Dreitzer</title>
+        <link rel="icon" href="/media/logocd.png" sizes="any" />
       </Head>
-      <div className='inline-block w-[5%] md:w-[15%] min-w-[100px]'>
+      <div className='relative md:inline-block w-[5%] md:w-[15%]'>
         <div>
-          <Navbar />
+          <DynamicNav />
         </div>
 
       </div>
-      <div className='inline-block w-[85%]'>
+      <div className='inline-block w-full md:w-[85%]'>
         <div>
           <ParallaxProvider>
             <ParallaxBanner style={{ aspectRatio: 'auto' }} className="h-[85vh] ml-auto mr-auto">
               <ParallaxBannerLayer className='' image="media/treelayer.jpeg" speed={0} />
               <ParallaxBannerLayer className='z-[6]' image="media/treelayer-trees.png" speed={10} />
               <ParallaxBannerLayer className='bg-[#2121210f] z-[5]' speed={0}>
-                <h2 className='font-["Palfour"] text-[#2f261c] break-words text-[40px] sm:text-[50px] md:text-[90px] text-center lowercase block ml-auto mr-auto z-[9] pt-[8vh] pb-[2vh] w-full'>
+                <h2 className='font-["Palfour"] text-[#2f261c] text-[40px] sm:text-[50px] md:text-[90px] text-center lowercase block ml-auto mr-auto z-[9] pt-[8vh] pb-[2vh] w-full'>
                   hi, i&apos;m charlie
                 </h2>
                 <Image src={'/media/profile.jpeg'}
                   width={160} height={160}
                   alt={'Charlie Dreitzer'}
-                  className='block ml-auto mr-auto rounded-full border-4 border-[#2f261c]' />
+                  className='block w-[130px] md:w-[160px] ml-auto mr-auto rounded-full border-4 border-[#2f261c]' />
               </ParallaxBannerLayer>
             </ParallaxBanner>
           </ParallaxProvider>
