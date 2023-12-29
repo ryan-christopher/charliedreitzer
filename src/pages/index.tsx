@@ -13,13 +13,20 @@ ipconfig getifaddr en0
 */}
 import dynamic from 'next/dynamic'
 
+
 const DynamicNav = dynamic(() => import('../components/Navbar'), {
   ssr: false,
 })
 
+const Preloader = dynamic(() => import('../components/Preloader'), {
+  ssr: false
+})
+
+
 export default function Home() {
   return (
     <main className="bg-[#f4f2ec] text-black text-left">
+      <Preloader />
       <Head>
         <title>Home - Charlie Dreitzer</title>
         <link rel="icon" href="/media/logocd.png" sizes="any" />
@@ -28,7 +35,6 @@ export default function Home() {
         <div>
           <DynamicNav />
         </div>
-
       </div>
       <div className='inline-block w-full md:w-[85%]'>
         <div>
