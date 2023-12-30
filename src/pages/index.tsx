@@ -18,15 +18,11 @@ const DynamicNav = dynamic(() => import('../components/Navbar'), {
   ssr: false,
 })
 
-const Preloader = dynamic(() => import('../components/Preloader'), {
-  ssr: false
-})
 
 
 export default function Home() {
   return (
     <main className="bg-[#f4f2ec] text-black text-left">
-      <Preloader />
       <Head>
         <title>Home - Charlie Dreitzer</title>
         <link rel="icon" href="/media/logocd.png" sizes="any" />

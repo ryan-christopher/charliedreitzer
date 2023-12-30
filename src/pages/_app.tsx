@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "../../styles/globals.css";
 import { AnimatePresence, motion, Spring } from "framer-motion";
 import type { AppProps } from "next/app";
+import React from "react";
 
 {/* 
 reference 
@@ -15,6 +16,15 @@ const App: React.FC<AppProps> = ({ Component, pageProps, router }) => {
         stiffness: 80,
         damping: 10,
     };
+
+    // Hide splash screen shen we are server side 
+    React.useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const loader = document.getElementById('globalLoader');
+            if (loader)
+                loader.classList.toggle('preload-finish');
+        }
+    }, []);
 
     return (
         <div>
