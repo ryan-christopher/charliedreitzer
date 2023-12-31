@@ -34,11 +34,11 @@ function Navbar() {
                     </div>
                     <div className="mobilemenu-overlay"></div>
                     <div className="mobilemenu-container text-[#f4f2ec] font-['Palfour'] text-[30px] text-center lowercase">
-                        <Link onClick={menutoggle()} className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/"}>Home</Link>
-                        <Link onClick={menutoggle()} className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/works"}>Works</Link>
-                        <Link onClick={menutoggle()} className='block font-["Butler"] text-[16px] lg:text-[18px] min-w-[100px] mt-[5px] pt-0 pl-[10%] hover:pl-[20%] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/knight_walk"}>&bull; Knight Walk</Link>
-                        <Link onClick={menutoggle()} className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/about"}>About</Link>
-                        <Link onClick={menutoggle()} className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/contact"}>Contact</Link>
+                        <Link className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/"}>Home</Link>
+                        <Link className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/works"}>Works</Link>
+                        <Link className='block font-["Butler"] text-[16px] lg:text-[18px] min-w-[100px] mt-[5px] pt-0 pl-[10%] hover:pl-[20%] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/knight_walk"}>&bull; Knight Walk</Link>
+                        <Link className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/about"}>About</Link>
+                        <Link className='block min-w-[100px] mt-[30px] hover:pl-[2vw] border-b-4 border-transparent hover:border-[#f4f2ec] transition-all ease-in' href={"/contact"}>Contact</Link>
                     </div>
                 </div>
             </div>

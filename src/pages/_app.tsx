@@ -21,7 +21,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps, router }) => {
     React.useEffect(() => {
         if (typeof window !== 'undefined') {
             const loader = document.getElementById('globalLoader');
-            const changebg = document.getElementById('html');
             if (loader)
                 loader.classList.toggle('preload-finish');
         }
