@@ -2,7 +2,6 @@
 import '../../styles/globals.css'
 import { ParallaxProvider, ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import Image from 'next/image';
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Outfit } from 'next/font/google'
 import Head from 'next/head'
@@ -25,7 +24,7 @@ export default function Home() {
     <main className="bg-[#f4f2ec] text-black text-left">
       <Head>
         <title>Home - Charlie Dreitzer</title>
-        <link rel="icon" href="/media/logocd.png" sizes="any" />
+        <link rel="icon" href="/media/icon.png" sizes="any" />
       </Head>
       <div className='relative md:inline-block w-[5%] md:w-[15%]'>
         <div>
@@ -38,9 +37,9 @@ export default function Home() {
             <ParallaxBanner style={{ aspectRatio: 'auto' }} className="h-[85vh] ml-auto mr-auto">
               <ParallaxBannerLayer className='' image="media/treelayer.jpeg" speed={0} />
               <ParallaxBannerLayer className='z-[6]' image="media/treelayer-trees.png" speed={10} />
-              <ParallaxBannerLayer className='bg-[#2121210f] z-[5]' speed={0}>
-                <h2 className='font-["Palfour"] text-[#2f261c] text-[40px] sm:text-[50px] md:text-[90px] text-center lowercase block ml-auto mr-auto z-[9] pt-[8vh] pb-[2vh] w-full'>
-                  hi, i&apos;m charlie
+              <ParallaxBannerLayer className='bg-[#2121210f]' speed={0}>
+                <h2 className='font-["Palfour"] text-[#2f261c] text-[40px] sm:text-[50px] md:text-[90px] text-center lowercase block ml-auto mr-auto pt-[8vh] pb-[2vh] w-full'>
+                  hi, i&rsquo;m charlie
                 </h2>
                 <Image src={'/media/profile.jpeg'}
                   width={160} height={160}
@@ -50,9 +49,9 @@ export default function Home() {
             </ParallaxBanner>
           </ParallaxProvider>
         </div>
-        <div className='relative w-full bg-[#f4f2ec] z-[7]'>
-          <div className={`${outfit.className} block text-[20px] md:text-[25px] p-[20px] md:p-[50px] pt-[60px] leading-[30px] md:leading-[40px]`}>
-            <span className='font-["Butler"] text-[70px] md:text-[100px]'>L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis
+        <div className='relative w-full bg-[#f4f2ec]'>
+          <div className={`${outfit.className} block max-w-[900px] ml-auto mr-auto text-[18px] md:text-[20px] p-[20px] md:p-[50px] pt-[60px] leading-[30px] md:leading-[40px]`}>
+            <span className='font-["Butler"] text-[65px] md:text-[80px] float-left relative pt-[23px] md:pt-[32px] pr-[13px]'>L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis
             varius ipsum, at vestibulum turpis. Phasellus accumsan nunc a tempus aliquam. Nullam porta vel dui nec posuere. Aliquam erat
             volutpat. Suspendisse pharetra odio quis ante condimentum ultrices. Nunc sed sodales purus, sed facilisis enim.
             <br /><br />
