@@ -26,7 +26,7 @@ export default function Contact() {
                     <DynamicNav />
                 </div>
             </div>
-            <div className='inline-block w-full md:w-[85%]'>
+            <div className='inline-block relative w-full md:w-[85%] min-h-[100vh]'>
                 <div>
                     <ParallaxProvider>
                         <ParallaxBanner style={{ aspectRatio: 'auto' }} className="h-[230px] md:h-[300px] ml-auto mr-auto">
@@ -39,7 +39,7 @@ export default function Contact() {
                         </ParallaxBanner>
                     </ParallaxProvider>
                 </div>
-                <div className='relative w-full bg-[#f4f2ec]'>
+                <div className='relative w-full bg-[#f4f2ec] pb-[150px]'>
                     <div className={`${outfit.className} block max-w-[750px] ml-auto mr-auto text-[18px] md:text-[20px] p-[20px] md:p-[50px] pt-[60px] leading-[30px] md:leading-[40px]`}>
                         <span className='font-["Butler"] text-[65px] md:text-[80px] float-left relative pt-[23px] md:pt-[32px] pr-[13px]'>M</span>
                         ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut facilisis tellus velit, non fringilla elit vestibulum id.
@@ -61,6 +61,10 @@ export default function Contact() {
                             </a>
                         </div>
                     </div>
+
+
+                </div>
+                <div className='absolute bottom-0 w-full'>
                     <Footer />
                 </div>
             </div>
